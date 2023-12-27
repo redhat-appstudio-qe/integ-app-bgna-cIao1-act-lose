@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-jevm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/kasem_org/integration1-kcao-tenant/integ-app-bgna/hacbs-test-project-jevm@sha256:49502ea36a4ef2ad9ab76c0b4b19094c694992d6c896f6987e028886385eedc9
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
